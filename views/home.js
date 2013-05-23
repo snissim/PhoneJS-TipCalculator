@@ -1,6 +1,6 @@
 ﻿"use strict";
 
-TipCalculator.Home = function(params) {
+TipCalculator.home = function(params) {
     var DEFAULT_TIP_PERCENT = 15,
         ROUND_UP = 1,
         ROUND_DOWN = -1,

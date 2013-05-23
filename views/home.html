@@ -1,54 +1,54 @@
 <div data-options="dxView : { name: 'Home' } " >
     <div data-options="dxContent : { targetPlaceholder: 'content' } ">
-		<div data-bind="dxToolbar: { items: [{ align: 'center', text: 'Tip Calculator' }] }"></div>
+        <div data-bind="dxToolbar: { items: [{ align: 'center', text: 'Tip Calculator' }] }"></div>
 
-        <div class="dx-fieldset top-fieldset">			
-			<div class="dx-field">
-				<div class="dx-field-label">Bill Total:</div>				
-				<div id="billTotalInput" class="dx-field-value" data-bind="dxNumberBox: { placeholder: 'Type here...', valueUpdateEvent: 'keyup', min: 0, value: billTotal }"></div>
-			</div>
-		</div>
-		
-		<div class="dx-fieldset">
-			<div class="dx-field slider-container">
-				<div class="slider-title">Tip, %</div>	
-				<div class="slider-body">				
-					<div data-bind="dxSlider: { min: 0, max: 25, step: 1, activeStateEnabled: true, value: tipPercent }"></div>
-				</div>
-				<div class="slider-value" data-bind="text: Globalize.format(tipPercent() / 100, 'p0')"></div>
-			</div>
+        <div class="dx-fieldset top-fieldset">            
+            <div class="dx-field">
+                <div class="dx-field-label">Bill Total:</div>                
+                <div id="billTotalInput" class="dx-field-value" data-bind="dxNumberBox: { placeholder: 'Type here...', valueUpdateEvent: 'keyup', min: 0, value: billTotal }"></div>
+            </div>
+        </div>
+        
+        <div class="dx-fieldset">
             <div class="dx-field slider-container">
-				<div class="slider-title">Split:</div>	
-				<div class="slider-body">				
-					<div data-bind="dxSlider: { min: 1, step: 1, max: 10, activeStateEnabled: true, value: splitNum }"></div>
-				</div>
-				<div class="slider-value" data-bind="text: splitNum"></div>
-			</div>
-		</div>
+                <div class="slider-title">Tip, %</div>    
+                <div class="slider-body">                
+                    <div data-bind="dxSlider: { min: 0, max: 25, step: 1, activeStateEnabled: true, value: tipPercent }"></div>
+                </div>
+                <div class="slider-value" data-bind="text: Globalize.format(tipPercent() / 100, 'p0')"></div>
+            </div>
+            <div class="dx-field slider-container">
+                <div class="slider-title">Split:</div>    
+                <div class="slider-body">                
+                    <div data-bind="dxSlider: { min: 1, step: 1, max: 10, activeStateEnabled: true, value: splitNum }"></div>
+                </div>
+                <div class="slider-value" data-bind="text: splitNum"></div>
+            </div>
+        </div>
 
-		<div class="round-buttons">
-			<div data-bind="dxButton: { text: 'Round Down', clickAction: roundDown }"></div>
+        <div class="round-buttons">
+            <div data-bind="dxButton: { text: 'Round Down', clickAction: roundDown }"></div>
             <div data-bind="dxButton: { text: 'Round Up', clickAction: roundUp }"></div>
-		</div>
+        </div>
 
-		<div id="results" class="dx-fieldset">            
+        <div id="results" class="dx-fieldset">            
             <div class="dx-field">
-				<span class="dx-field-label">Total to pay</span>
-				<span class="dx-field-value" data-bind="text: Globalize.format(totalToPay(), 'c')"></span>
-			</div>
-			<div class="dx-field">
-				<span class="dx-field-label">Total per person</span>
-				<span class="dx-field-value" data-bind="text: Globalize.format(totalPerPerson(), 'c')"></span>
-			</div>
+                <span class="dx-field-label">Total to pay</span>
+                <span class="dx-field-value" data-bind="text: Globalize.format(totalToPay(), 'c')"></span>
+            </div>
             <div class="dx-field">
-				<span class="dx-field-label">Total tip</span>
-				<span class="dx-field-value" data-bind="text: Globalize.format(totalTip(), 'c')"></span>
-			</div>
+                <span class="dx-field-label">Total per person</span>
+                <span class="dx-field-value" data-bind="text: Globalize.format(totalPerPerson(), 'c')"></span>
+            </div>
             <div class="dx-field">
-				<span class="dx-field-label">Tip per person</span>
-				<span class="dx-field-value" data-bind="text: Globalize.format(tipPerPerson(), 'c')"></span>
-			</div>
-	    </div>	
+                <span class="dx-field-label">Total tip</span>
+                <span class="dx-field-value" data-bind="text: Globalize.format(totalTip(), 'c')"></span>
+            </div>
+            <div class="dx-field">
+                <span class="dx-field-label">Tip per person</span>
+                <span class="dx-field-value" data-bind="text: Globalize.format(tipPerPerson(), 'c')"></span>
+            </div>
+        </div>    
     </div>
 </div>
 

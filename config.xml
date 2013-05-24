@@ -9,11 +9,11 @@
     <name>Tip Calculator</name>
 
     <description>
-        Tip Calculator app implementation from DevExpress
+        Fast and convenient way to calculate tips for a check
     </description>
 
     <author href="http://www.devexpress.com">
-        Simple PhoneJS demo app
+        Developer Express Inc.
     </author>
 
     <preference name="phonegap-version" value="2.3.0" />

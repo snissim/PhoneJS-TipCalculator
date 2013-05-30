@@ -1,11 +1,11 @@
-<div data-options="dxView : { name: 'home' } " >
-    <div data-options="dxContent : { targetPlaceholder: 'content' } ">
-        <div data-bind="dxToolbar: { items: [{ align: 'center', text: 'Tip Calculator' }] }"></div>
+<div data-options="dxView : { name: 'home' }">
+    <div data-options="dxContent : { targetPlaceholder: 'content' }">
+        <div data-bind="dxToolbar: { items: [ { align: 'center', text: 'Tip Calculator' } ] }"></div>
 
         <div class="dx-fieldset top-fieldset">            
             <div class="dx-field">
                 <div class="dx-field-label">Bill Total:</div>                
-                <div id="billTotalInput" class="dx-field-value" data-bind="dxNumberBox: { placeholder: 'Type here...', valueUpdateEvent: 'keyup', min: 0, value: billTotal }"></div>
+                <div id="billTotalInput" class="dx-field-value" data-bind="dxNumberBox: { value: billTotal, placeholder: 'Type here...', valueUpdateEvent: 'keyup', min: 0 }"></div>
             </div>
         </div>
         
@@ -15,7 +15,7 @@
                 <div class="slider-body">                
                     <div data-bind="dxSlider: { min: 0, max: 25, step: 1, activeStateEnabled: true, value: tipPercent }"></div>
                 </div>
-                <div class="slider-value" data-bind="text: Globalize.format(tipPercent() / 100, 'p0')"></div>
+                <div class="slider-value" data-bind="text: Globalize.format(0.01 * tipPercent(), 'p0')"></div>
             </div>
             <div class="dx-field slider-container">
                 <div class="slider-title">Split:</div>    
@@ -34,7 +34,7 @@
         <div id="results" class="dx-fieldset">            
             <div class="dx-field">
                 <span class="dx-field-label">Total to pay</span>
-                <span class="dx-field-value" data-bind="text: Globalize.format(totalToPay(), 'c')"></span>
+                <span class="dx-field-value" style="font-weight: bold" data-bind="text: Globalize.format(totalToPay(), 'c')"></span>
             </div>
             <div class="dx-field">
                 <span class="dx-field-label">Total per person</span>

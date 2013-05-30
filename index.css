@@ -62,7 +62,5 @@ body
 #results .dx-field-value
 {
     width: 50%;
+    float: left;
 }
-
-
-

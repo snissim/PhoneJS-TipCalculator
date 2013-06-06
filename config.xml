@@ -33,10 +33,10 @@
     <icon src="Resources/PackageIcons.iOS.icon@2x.png" gap:platform="ios" width="114" height="114" />
 
     <!-- Android splashes -->
-    <gap:splash src="Resources/TODO.png"  gap:platform="android" gap:density="ldpi" />
-    <gap:splash src="Resources/TODO.png"  gap:platform="android" gap:density="mdpi" />
-    <gap:splash src="Resources/TODO.png"  gap:platform="android" gap:density="hdpi" />
-    <gap:splash src="Resources/TODO.png" gap:platform="android" gap:density="xhdpi" />
+    <gap:splash src="Resources/PackageIcons.Android.splash_200_320.png"  gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="Resources/PackageIcons.Android.splash_320_480.png"  gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="Resources/PackageIcons.Android.splash_480_800.png"  gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="Resources/PackageIcons.Android.splash_720_1280.png" gap:platform="android" gap:density="xhdpi" />
 
     <!-- iPhone splashes -->
     <gap:splash src="Resources/PackageIcons.iOS.Default~iphone.png" gap:platform="ios" width="320" height="480" />

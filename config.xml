@@ -9,14 +9,15 @@
     <name>Tip Calculator</name>
 
     <description>
-        Fast and convenient way to calculate tips for a check
+        Fast and convenient way to calculate tips for a check.
+        Inputting the sum from a check, you get the total tips due, as well as the totals and tips per person.
     </description>
 
     <author href="http://www.devexpress.com">
         Developer Express Inc.
     </author>
 
-    <preference name="phonegap-version" value="2.3.0" />
+    <preference name="phonegap-version" value="2.9.0" />
     <preference name="orientation" value="portrait" />
     <preference name="target-device" value="handset" />
     <preference name="auto-hide-splash-screen" value="false" />

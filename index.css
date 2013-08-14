@@ -11,6 +11,10 @@ body
     padding: 0;
 }
 
+.dx-viewport.dx-theme-ios7 {
+	background-color: #EFEFF4;
+}
+
 .empty-layout 
 {
     height: 100%;
@@ -18,7 +22,7 @@ body
 
 .round-buttons 
 {
-    margin: 4px 8px 12px;
+    margin: 4px 8px 8px;
     text-align: center;
 }
 
@@ -30,6 +34,12 @@ body
 .dx-theme-ios .slider-container 
 {
     line-height: 28px;
+}
+
+.dx-viewport.dx-theme-ios-typography .dx-fieldset
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .dx-theme-android .slider-container 
@@ -64,3 +74,5 @@ body
     width: 50%;
     float: left;
 }
+
+

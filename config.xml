@@ -6,7 +6,7 @@
     versionCode="100"
     version="0.1.0.0">
    
-    <name>Tip Calculator</name>
+    <name>TipCalculator</name>
 
     <description>
         Fast and convenient way to calculate tips for a check.

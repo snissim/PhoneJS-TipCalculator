@@ -11,8 +11,20 @@ body
     padding: 0;
 }
 
-.dx-viewport.dx-theme-ios7 {
-	background-color: #EFEFF4;
+#viewport .main-content {
+    position: absolute;
+    width: 100%;
+    top: 44px;
+    bottom: 0;
+    height: auto;
+}
+
+#viewport.dx-theme-win8 .main-content {
+    top: 46px;
+}
+
+.dx-viewport.dx-theme-ios.dx-version-major-7 .main-content {
+    background-color: #EFEFF4;
 }
 
 .empty-layout 
@@ -29,6 +41,13 @@ body
 .round-buttons .dx-button 
 {
     width: 45%;
+}
+
+.dx-theme-tizen .round-buttons .dx-button,
+.dx-theme-win8 .round-buttons .dx-button
+{
+    padding-left: 0;
+    padding-right: 0;
 }
 
 .dx-theme-ios .slider-container 
@@ -75,4 +94,11 @@ body
     float: left;
 }
 
+.dx-theme-tizen .dx-field-value.dx-editbox {
+    margin-top: 0;
+}
+
+.dx-theme-tizen .dx-field {
+    min-height: 35px;
+}
 

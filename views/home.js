@@ -1,6 +1,8 @@
 ﻿"use strict";
 
-TipCalculator.home = function(params) {
+TipCalculator.home = function (params) {
+    alert('loading home controller...');
+
     var DEFAULT_TIP_PERCENT = 15;
 
     var billTotal = ko.observable(),
@@ -17,24 +19,24 @@ TipCalculator.home = function(params) {
     }
 
 
-    var totalTip = ko.computed(function() {
+    var totalTip = ko.computed(function () {
         return 0.01 * tipPercent() * billTotalAsNumber();
     });
 
-    var tipPerPerson = ko.computed(function() {
+    var tipPerPerson = ko.computed(function () {
         return totalTip() / splitNum();
     });
 
-    var totalPerPerson = ko.computed(function() {
+    var totalPerPerson = ko.computed(function () {
         return (totalTip() + billTotalAsNumber()) / splitNum();
     });
 
-    var totalToPay = ko.computed(function() {
+    var totalToPay = ko.computed(function () {
         var value = totalTip() + billTotalAsNumber();
 
-        switch(roundMode()) {
+        switch (roundMode()) {
             case ROUND_DOWN:
-                if(Math.floor(value) >= billTotalAsNumber())
+                if (Math.floor(value) >= billTotalAsNumber())
                     return Math.floor(value);
                 return value;
 
@@ -56,15 +58,15 @@ TipCalculator.home = function(params) {
     }
 
 
-    billTotal.subscribe(function() {
+    billTotal.subscribe(function () {
         roundMode(ROUND_NONE);
     });
 
-    tipPercent.subscribe(function() {
+    tipPercent.subscribe(function () {
         roundMode(ROUND_NONE);
     });
 
-    splitNum.subscribe(function() {
+    splitNum.subscribe(function () {
         roundMode(ROUND_NONE);
     });
 
@@ -73,6 +75,7 @@ TipCalculator.home = function(params) {
         $("#billTotalInput").data("dxNumberBox").focus();
     }
 
+    alert('home controller loaded');
 
     return {
         billTotal: billTotal,
